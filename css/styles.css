@@ -1,0 +1,176 @@
+/* Author: Hristijan Gjorgjievski
+  Date: 12.06.2017
+ */
+
+ /* Basic styles for the page */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFF;
+}
+
+/* Fix unordered list */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Style footer */
+footer {
+  position: relative;
+  padding: 1em;
+  background-color: #01579B;
+  color: #FFF;
+}
+
+/* Style links */
+a {
+  text-decoration: none;
+  color: #03A9F4;
+}
+
+a:hover {
+  text-shadow: none;
+  color: white;
+  background-color: #03A9F4;
+  border-radius: 5px;
+}
+
+.logo {
+  height: 3em;
+  margin: 5px;
+}
+
+.top {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url("../images/dog-intro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-items {
+  display: none;
+}
+
+.intro-inner {
+  position: absolute;
+  max-width: 600px;
+  margin-left: .4em;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 2px 2px 2px #222;
+}
+
+.navbar {
+  background-color: #03A9F4;
+  position: fixed;
+  overflow: hidden;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 3px 0 3px #222;
+}
+
+.navbar a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  border-top: 1px solid #039BE5;
+  background-color: #29B6F6;
+  transition: .3s;
+}
+
+.navbar a:hover {
+  background-color: #FFF;
+  color: #03A9F4;
+}
+
+.navbar li {
+  font-size: 1.5em;
+}
+
+.hamburger {
+  position: absolute;
+  right: 5px;
+  top: 13px;
+  padding: 3px 1px;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #FFF;
+  margin: 4px;
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  text-shadow: 2px 2px 2px #222;
+  background-image: url('../images/what-we-do.jpg');
+}
+
+.inner-section {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(30, 30, 30, .4);
+  border-radius: 2px;
+  padding: .4em;
+}
+
+.intro-services {
+  height: 100vh;
+  background-image: url('../images/services.jpg');
+  background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .navbar .menu-items {
+    display: block !important;
+    float: right;
+  }
+
+  .navbar a {
+    padding: 15px .4em;
+    border: none;
+    background-color: #03A9F4;
+  }
+
+  .navbar li {
+    display: block;
+    float: left;
+  }
+
+  .intro-inner {
+    margin-left: 3em;
+  }
+
+  .inner-section {
+    margin-left: 3em;
+    max-width: 600px;
+  }
+}
